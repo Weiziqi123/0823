@@ -1,0 +1,52 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 13px;
+    color: white;
+    background-color: black;
+}
+#box{
+    position: relative;
+    width: 700px;
+    height: 300px;
+    margin: 115px auto 0;
+
+}
+
+#box .prev,#box .next{
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 80px;
+    margin-top:-40px;
+    text-align: center;
+    cursor: pointer;
+    left: 780px;
+}
+#box .next{
+    right: -60px;
+}
+#box .prev{
+    left: -60px;
+}
+#box ul{
+    position: relative;
+    width: 754px;
+    height: 300px;
+    border: 1px solid white;
+}
+
+#box li{
+    list-style: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 2px solid black;
+}
+#box img{
+    width: 100%;
+    height: 100%;
+}
