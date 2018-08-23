@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div id='box'>
-          <section class="prev">前一张</section>
-          <section class="next">下一张</section>
+    <div class='box'>
+          <section class="slide-prev">前一张</section>
+          <section class="slide-next">下一张</section>
 
           <ul>
               <li><img src="images/1.jpg" alt="轮播图片"></li>
@@ -24,6 +24,10 @@
     </div>
 
      <script src="js/jquery-3.3.1.js"></script>
-     <script src="js/index.js"></script>
+     <script src="js/jquery.ZYSlide.js"></script>
+     <script>
+         jQuery.noConflict();
+         jQuery('.box').ZYSlide();
+     </script>
 </body>
 </html>
