@@ -16,7 +16,7 @@
             // 控制刚刚炸开的时间
             delay:1000,
             // 控制time的时间（轮播速度）
-            speed:1000
+            speed:2000
         };
 
         //对象合并
@@ -81,6 +81,8 @@
         $(this).each(function(i,ele){
             slide(ele,options)
         })
+        //支持链式调用
+        return this;
     }
 })(jQuery)
 
